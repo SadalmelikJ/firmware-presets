@@ -4,7 +4,7 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: aos, sadalmelikj, pid, tune, 3.5
 #$ AUTHOR: sadalmelikj
-#$ DISCUSSION: https://www.aos-rc.com
+#$ DISCUSSION: sadalmelikj@outlook.com
 #$ DESCRIPTION: Custom Tune for the AOS 3.5. Based on a 850mAh 4S build with 3000KV Motors.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Master multiplier is set to 1.25 for safety. Increase it carefully to further improve flight performance.
