@@ -21,3 +21,34 @@
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
 #$ INCLUDE: presets/4.5/tune/defaults.txt
+
+#$ OPTION_GROUP BEGIN: Some popular RC Links
+
+    #$ OPTION BEGIN (UNCHECKED): Crossfire/ELRS 50hz cinematic
+        # Crossfire/ELRS 50Hz
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/50hz_cinematic.txt
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): ELRS 150hz 
+        # ERLS 150z
+        
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+        #$ INCLUDE: presets/4.3/rc_link/generic/150hz_cinematic.txt
+    #$ OPTION END
+    
+    #$ OPTION BEGIN (UNCHECKED): ELRS 250hz (don’t recommend faster rates for cinematic flying)
+        # ELRS 250Hz
+       
+        feature RX_SERIAL
+        set serialrx_provider = CRSF
+
+         #$ INCLUDE: presets/4.3/rc_link/generic/250hz_cinematic.txt
+    #$ OPTION END
+    
+#$ OPTION_GROUP END
