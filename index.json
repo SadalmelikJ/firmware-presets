@@ -191,6 +191,7 @@
       "Neil Marek (Grower)",
       "NemesisXB",
       "QuadMcFly (Ryan Harrell)",
+      "sadalmelikj",
       "Sartor",
       "Sjoer van der Ploeg",
       "Stingers Swarm",
@@ -495,6 +496,7 @@
       "SA 2.1",
       "sa2.0",
       "sa20",
+      "sadalmelikj",
       "Safe",
       "sbang",
       "sbus",
@@ -7377,6 +7379,26 @@
         "tune"
       ],
       "author": "Volker Göschl-Covrljan",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Sad_aos_3.5_tune.txt",
+      "hash": "18605aafcbc6582fd294156a9977d1d7fe83a01efa4a3a07a03fcbf616616ec4",
+      "title": "AOS 3.5 tune by Chris Rosser",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "COMMUNITY",
+      "keywords": [
+        "aos",
+        "sadalmelikj",
+        "pid",
+        "tune",
+        "3.5"
+      ],
+      "author": "sadalmelikj",
+      "force_options_review": true,
       "priority": 1000000000000
     },
     {
