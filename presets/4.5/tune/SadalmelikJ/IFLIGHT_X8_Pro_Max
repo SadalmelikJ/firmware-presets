@@ -1,0 +1,23 @@
+#$ TITLE:IFIGHT Taurus X8 Pro Max
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: Taurus X8 Pro Max,X8,Pro,Max,IFIGHT, pid, tune, 11
+#$ AUTHOR: IFLIGHT
+#$ DISCUSSION: 
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: RPM filtering is MANDATORY!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Please carefully review the options above and tick any that are relevant.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Choose your RC link speed.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Check Motor ordering and direction 
+#$ DESCRIPTION:
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ INCLUDE: presets/4.5/tune/defaults.txt
