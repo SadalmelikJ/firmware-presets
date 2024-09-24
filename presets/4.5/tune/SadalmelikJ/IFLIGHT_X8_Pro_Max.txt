@@ -20,8 +20,11 @@
 
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.5/tune/defaults.txt
-
+#$ OPTION_GROUP BEGIN: ResetToDefualt
+    #$ OPTION BEGIN (CHECKED): ResetToDefualt
+        #$ INCLUDE: presets/4.5/tune/defaults.txt
+    #$ OPTION END
+#$ OPTION_GROUP END
 # resources
 resource LED 1 E03
 resource LED 2 E04
