@@ -1,0 +1,360 @@
+#$ TITLE:Taurus X8 Pro Max CRSF/ELRS
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS:iflight, Taurus, X8
+#$ AUTHOR: iFlight
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:* NOT FOR BEGINNERS! Only for experienced users!
+#$ DESCRIPTION:
+#$ DESCRIPTION: How to:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "CRSF" selected
+#$ DESCRIPTION:* Come back & apply this Preset
+#$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
+#$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
+#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Display-)
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION:* Have Fun!
+#$ DESCRIPTION:* -
+#$ DESCRIPTION:
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+defaults nosave
+#$ OPTION END
+
+
+#$ OPTION BEGIN (CHECKED): Apply All
+# version
+# Betaflight / STM32H743 (SH74) 4.5.0 Jul  2 2024 / 16:47:13 (c155f5830) MSP API: 1.46
+# config rev: f0255d6
+
+# start the command batch
+batch start
+
+board_name IFLIGHT_BLITZ_H7_PRO
+manufacturer_id IFRC
+
+# name: Taurus X8 Pro Max
+
+# resources
+resource LED 1 E03
+resource LED 2 E04
+resource LED 3 NONE
+resource GYRO_EXTI 2 E15
+resource GYRO_CS 2 E11
+
+# feature
+feature GPS
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+
+# mixer
+mixer OCTOX8
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::C:6
+led 1 1,0::C:6
+led 2 2,0::C:6
+led 3 3,0::C:6
+led 4 4,0::C:6
+led 5 5,0::C:6
+led 6 6,0::C:6
+led 7 7,0::C:6
+led 8 8,0::C:6
+led 9 9,0::C:6
+led 10 10,0::C:6
+led 11 11,0::C:6
+led 12 12,0::C:6
+led 13 13,0::C:6
+led 14 14,0::C:6
+led 15 15,0::C:6
+led 16 0,1::C:6
+led 17 1,1::C:6
+led 18 2,1::C:6
+led 19 3,1::C:6
+led 20 4,1::C:6
+led 21 5,1::C:6
+led 22 6,1::C:6
+led 23 7,1::C:6
+led 24 8,1::C:6
+led 25 9,1::C:6
+led 26 10,1::C:6
+led 27 11,1::C:6
+led 28 12,1::C:6
+led 29 13,1::C:6
+led 30 14,1::C:6
+led 31 15,1::C:6
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+aux 2 40 8 900 2100 0 0
+
+# master
+set mag_hardware = NONE
+set motor_pwm_protocol = DSHOT300
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 525
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set gyro_lpf1_dyn_min_hz = 262
+set gyro_lpf1_dyn_max_hz = 525
+set acc_lpf_hz = 10
+set acc_calibration = 4,6,58,1
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_auto_factor_throttle = 170
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+set blackbox_sample_rate = 1/4
+set dshot_bidir = ON
+set failsafe_procedure = GPS-RESCUE
+set beeper_frequency = 2500
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_rescue_return_alt = 120
+set gps_rescue_ground_speed = 1100
+set gps_rescue_min_sats = 5
+set simplified_gyro_filter_multiplier = 105
+set osd_warn_bitmask = 57343
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 20000
+set osd_vbat_pos = 389
+set osd_link_quality_pos = 2619
+set osd_link_tx_power_pos = 2532
+set osd_rssi_dbm_pos = 2613
+set osd_tim_2_pos = 2596
+set osd_flymode_pos = 56
+set osd_throttle_pos = 3468
+set osd_current_pos = 515
+set osd_gps_speed_pos = 3500
+set osd_gps_lon_pos = 36
+set osd_gps_lat_pos = 68
+set osd_gps_sats_pos = 3532
+set osd_home_dir_pos = 2554
+set osd_home_dist_pos = 3564
+set osd_altitude_pos = 2500
+set osd_power_pos = 292
+set osd_warnings_pos = 14869
+set osd_avg_cell_voltage_pos = 2564
+set osd_disarmed_pos = 2358
+set osd_esc_tmp_pos = 356
+set osd_esc_rpm_pos = 54
+set osd_core_temp_pos = 324
+set debug_mode = GYRO_SCALED
+set gyro_2_spibus = 4
+set gyro_2_sensor_align = CW0FLIP
+set gyro_2_align_pitch = 1800
+set rpm_filter_min_hz = 75
+set craft_name = TaurusX8 Pro Max
+set box_user_1_name = VTX_ON_OFF
+
+profile 0
+
+# profile 0
+set angle_limit = 45
+set dterm_lpf1_dyn_min_hz = 60
+set dterm_lpf1_dyn_max_hz = 120
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 120
+set vbat_sag_compensation = 100
+set iterm_relax = RP_INC
+set iterm_relax_cutoff = 4
+set pidsum_limit = 1000
+set p_pitch = 84
+set i_pitch = 75
+set d_pitch = 152
+set f_pitch = 324
+set p_roll = 76
+set i_roll = 68
+set d_roll = 126
+set f_roll = 296
+set p_yaw = 76
+set i_yaw = 68
+set f_yaw = 296
+set d_min_roll = 105
+set d_min_pitch = 125
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+set dyn_idle_min_rpm = 20
+set simplified_master_multiplier = 190
+set simplified_i_gain = 50
+set simplified_d_gain = 185
+set simplified_pi_gain = 90
+set simplified_dmax_gain = 60
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 80
+set tpa_rate = 70
+set tpa_breakpoint = 1250
+
+profile 1
+
+# profile 1
+set angle_limit = 45
+set dterm_lpf1_dyn_min_hz = 60
+set dterm_lpf1_dyn_max_hz = 120
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 120
+set vbat_sag_compensation = 100
+set iterm_relax = RP_INC
+set iterm_relax_cutoff = 4
+set pidsum_limit = 1000
+set p_pitch = 84
+set i_pitch = 75
+set d_pitch = 152
+set f_pitch = 324
+set p_roll = 76
+set i_roll = 68
+set d_roll = 126
+set f_roll = 296
+set p_yaw = 76
+set i_yaw = 68
+set f_yaw = 296
+set d_min_roll = 105
+set d_min_pitch = 125
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+set dyn_idle_min_rpm = 20
+set simplified_master_multiplier = 190
+set simplified_i_gain = 50
+set simplified_d_gain = 185
+set simplified_pi_gain = 90
+set simplified_dmax_gain = 60
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 80
+set tpa_rate = 70
+set tpa_breakpoint = 1250
+
+profile 2
+
+# profile 2
+set angle_limit = 45
+set dterm_lpf1_dyn_min_hz = 60
+set dterm_lpf1_dyn_max_hz = 120
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 120
+set vbat_sag_compensation = 100
+set iterm_relax = RP_INC
+set iterm_relax_cutoff = 4
+set pidsum_limit = 1000
+set p_pitch = 84
+set i_pitch = 75
+set d_pitch = 152
+set f_pitch = 324
+set p_roll = 76
+set i_roll = 68
+set d_roll = 126
+set f_roll = 296
+set p_yaw = 76
+set i_yaw = 68
+set f_yaw = 296
+set d_min_roll = 105
+set d_min_pitch = 125
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+set dyn_idle_min_rpm = 20
+set simplified_master_multiplier = 190
+set simplified_i_gain = 50
+set simplified_d_gain = 185
+set simplified_pi_gain = 90
+set simplified_dmax_gain = 60
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 80
+set tpa_rate = 70
+set tpa_breakpoint = 1250
+
+profile 3
+
+# profile 3
+set angle_limit = 45
+set dterm_lpf1_dyn_min_hz = 60
+set dterm_lpf1_dyn_max_hz = 120
+set dterm_lpf1_static_hz = 0
+set dterm_lpf2_static_hz = 120
+set vbat_sag_compensation = 100
+set iterm_relax = RP_INC
+set iterm_relax_cutoff = 4
+set pidsum_limit = 1000
+set p_pitch = 84
+set i_pitch = 75
+set d_pitch = 152
+set f_pitch = 324
+set p_roll = 76
+set i_roll = 68
+set d_roll = 126
+set f_roll = 296
+set p_yaw = 76
+set i_yaw = 68
+set f_yaw = 296
+set d_min_roll = 105
+set d_min_pitch = 125
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+set dyn_idle_min_rpm = 20
+set simplified_master_multiplier = 190
+set simplified_i_gain = 50
+set simplified_d_gain = 185
+set simplified_pi_gain = 90
+set simplified_dmax_gain = 60
+set simplified_feedforward_gain = 130
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 105
+set simplified_dterm_filter_multiplier = 80
+set tpa_rate = 70
+set tpa_breakpoint = 1250
+
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_srate = 50
+set pitch_srate = 50
+set yaw_srate = 40
+
+# end the command batch
+batch end
+
+# 
+#$ OPTION END
+

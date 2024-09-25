@@ -7387,8 +7387,26 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.5/tune/SadalmelikJ/IFLIGHT_X8_Pro_Max.txt",
-      "hash": "9e94798463d41e47fc16cb53a10a86c93a4069684c0e9270d6e334058a8c1911",
+      "fullPath": "presets/4.5/tune/SadalmelikJ/IFLIGHT_X8_Pro_Max_DJI_SBUS.txt",
+      "hash": "fd7d98e1c63448aa8c31e19de5b5ff97496bd40c6d27e24c3b6420a023dcca21",
+      "title": "Taurus X8 Pro Max DJI",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Taurus",
+        "X8"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/IFLIGHT_X8_Pro_Max_ELRS_CRSF.txt",
+      "hash": "dc4ea0d662bd13297435b4cf9a52e3953d25b10da9acf9f3e03a015d0bc898f1",
       "title": "Taurus X8 Pro Max CRSF/ELRS",
       "firmware_version": [
         "4.5"
