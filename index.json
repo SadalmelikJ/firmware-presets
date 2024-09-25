@@ -390,7 +390,6 @@
       "HDOSD",
       "HDzero",
       "Headsup",
-      "helion",
       "HighKV",
       "hot",
       "HS5",
@@ -537,6 +536,7 @@
       "T3",
       "tank solo",
       "tank ultimate",
+      "Taurus",
       "TBS",
       "tbs sa",
       "Team Black Sheep",
@@ -589,7 +589,7 @@
       "whooptopia",
       "world champion",
       "wtfos",
-      "xing",
+      "X8",
       "YAROSFPV",
       "youtube",
       "zoe",
@@ -7388,17 +7388,17 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/IFLIGHT_X8_Pro_Max.txt",
-      "hash": "47e334b93058710d56b2a814169062efaccf8be44f7de12e0f0c07b0a3ec37b1",
-      "title": "IFIGHT Taurus X8 Pro Max CRSF/ELRS",
+      "hash": "77536f31a99cffd72a72d29fc7e8036f8009b6f9e7ad50d5fade35c5a44e4124",
+      "title": "Taurus X8 Pro Max CRSF/ELRS",
       "firmware_version": [
         "4.5"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
       "keywords": [
-        "xing",
         "iflight",
-        "helion"
+        "Taurus",
+        "X8"
       ],
       "author": "iFlight",
       "force_options_review": true,

@@ -1,8 +1,8 @@
-#$ TITLE:IFIGHT Taurus X8 Pro Max CRSF/ELRS
+#$ TITLE:Taurus X8 Pro Max CRSF/ELRS
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, helion
+#$ KEYWORDS:iflight, Taurus, X8
 #$ AUTHOR: iFlight
 
 #$ PARSER: MARKED
