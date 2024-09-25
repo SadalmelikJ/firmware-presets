@@ -1,22 +1,36 @@
-#$ TITLE:IFIGHT Taurus X8 Pro Max
+#$ TITLE:IFIGHT Taurus X8 Pro Max CRSF/ELRS
 #$ FIRMWARE_VERSION: 4.5
-#$ CATEGORY: TUNE
-#$ STATUS: COMMUNITY
-#$ KEYWORDS: Taurus X8 Pro Max,X8,Pro,Max,IFIGHT, pid, tune, 11
-#$ AUTHOR: IFLIGHT
-#$ DISCUSSION: 
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, helion
+#$ AUTHOR: iFlight
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official 2RAW Tune!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION: 
 #$ DESCRIPTION:
-#$ DESCRIPTION: 
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:* NOT FOR BEGINNERS! Only for experienced users!
 #$ DESCRIPTION:
-#$ DESCRIPTION: RPM filtering is MANDATORY!
+#$ DESCRIPTION: How to:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "CRSF" selected
+#$ DESCRIPTION:* Come back & apply this Preset
+#$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
+#$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
+#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Display-)
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION:* Have Fun!
+#$ DESCRIPTION:* -
 #$ DESCRIPTION:
-#$ DESCRIPTION: Please carefully review the options above and tick any that are relevant.
-#$ DESCRIPTION:
-#$ DESCRIPTION: Choose your RC link speed.
-#$ DESCRIPTION:
-#$ DESCRIPTION: Check Motor ordering and direction 
-#$ DESCRIPTION:
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
 
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
