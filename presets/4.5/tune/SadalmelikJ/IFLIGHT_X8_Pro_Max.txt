@@ -176,7 +176,7 @@ set gyro_2_spibus = 4
 set gyro_2_sensor_align = CW0FLIP
 set gyro_2_align_pitch = 1800
 set rpm_filter_min_hz = 75
-set craft_name = Taurus X8 Pro Max
+set craft_name = TaurusX8 Pro Max
 set box_user_1_name = VTX_ON_OFF
 
 profile 0
