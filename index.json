@@ -355,6 +355,9 @@
       "expert",
       "express",
       "Extreme",
+      "F4",
+      "F5",
+      "F6",
       "feisar",
       "filter",
       "filtering",
@@ -442,6 +445,7 @@
       "names",
       "nano",
       "nanohawk",
+      "Nazgul",
       "Neil",
       "neuron",
       "nice",
@@ -7385,6 +7389,114 @@
       ],
       "author": "Volker Göschl-Covrljan",
       "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F4 O3 DJI 4.5.x.txt",
+      "hash": "f9add622e60d7d42191ae86a9e3cf1ca7a9d229c11a3003365b05a1a9cb14217",
+      "title": "Nazgul F4 DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F4"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F4 O3 ELRS 4.5.x.txt",
+      "hash": "8ebee4896c31a09b9019c16769ad0f738c16df14c6aa7af83a0b0aa4fa329674",
+      "title": "Nazgul F4 ELRS/CRSF",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F4"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 O3 DJI 4.5.0.txt",
+      "hash": "6c1bab56d28d83396ac0b5caf1051bf4ad6c5d5a3035c921e53da8efcddc8e9a",
+      "title": "Nazgul F5 V2 DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F5"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 O3 ELRS 4.5.0.txt",
+      "hash": "f2b443f7c0512675752b627d4f831636ae64d55e1f25a2ae0765d3e1eaa28ed6",
+      "title": "Nazgul F5 V2 ELRS/CRSF",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F5"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 O3 DJI 4.5.0.txt",
+      "hash": "c509f7dc85d62ae1e849ab81cd8f1b8662936cdb4d25279af4c35aa904047388",
+      "title": "Nazgul F6 V2 DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F6"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 O3 ELRS 4.5.0.txt",
+      "hash": "8a8c460b2a5baa9b18815a4fc1824ba8a454ff105a3202fa19448f45ebda0d0c",
+      "title": "Nazgul F6 V2 ELRS/CRSF",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F6"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/IFLIGHT_X8_Pro_Max_DJI_SBUS.txt",

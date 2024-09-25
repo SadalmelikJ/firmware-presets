@@ -1,0 +1,278 @@
+#$ TITLE:Nazgul F4 ELRS/CRSF
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS:iflight, Nazgul, F4
+#$ AUTHOR: iFlight
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* SBUS protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:* NOT FOR BEGINNERS! Only for experienced users!
+#$ DESCRIPTION:
+#$ DESCRIPTION: How to:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "SBUS" selected
+#$ DESCRIPTION:* Come back & apply this Preset
+#$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
+#$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
+#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Display-)
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION:* Have Fun!
+#$ DESCRIPTION:* -
+#$ DESCRIPTION:
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.5.1 Jul 27 2024 / 08:12:49 (77d01ba3b) MSP API: 1.46
+# config rev: 6440ad8
+
+# start the command batch
+batch start
+
+board_name IFLIGHT_BLITZ_F722
+manufacturer_id IFRC
+
+# name: Nagul F4
+
+# feature
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:0
+led 1 1,0::L:0
+led 2 2,0::L:0
+led 3 3,0::L:0
+led 4 4,0::L:0
+led 5 5,0::L:0
+led 6 6,0::L:0
+led 7 7,0::L:0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -5,3,29,1
+set mag_hardware = NONE
+set rc_smoothing_auto_factor = 140
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set blackbox_sample_rate = 1/16
+set dshot_bidir = ON
+set dshot_bitbang = AUTO
+set motor_pwm_protocol = DSHOT300
+set ibata_scale = 210
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_rescue_ground_speed = 1100
+set gps_rescue_min_sats = 5
+set pid_process_denom = 2
+set simplified_gyro_filter = OFF
+set osd_warn_bitmask = 57343
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 20000
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 2619
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2613
+set osd_tim_2_pos = 2599
+set osd_flymode_pos = 398
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 512
+set osd_mah_drawn_pos = 544
+set osd_craft_name_pos = 384
+set osd_gps_speed_pos = 3497
+set osd_gps_sats_pos = 3529
+set osd_home_dir_pos = 2554
+set osd_home_dist_pos = 3561
+set osd_altitude_pos = 18919
+set osd_power_pos = 388
+set osd_warnings_pos = 14869
+set osd_avg_cell_voltage_pos = 2567
+set osd_disarmed_pos = 2391
+set osd_stat_bitmask = 8402468
+set debug_mode = GYRO_SCALED
+set gyro_1_sensor_align = DEFAULT
+set gyro_1_align_yaw = 900
+set craft_name = Nagul F4
+
+profile 0
+
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 125
+set throttle_boost = 2
+set p_pitch = 65
+set i_pitch = 76
+set d_pitch = 64
+set f_pitch = 175
+set p_roll = 48
+set i_roll = 56
+set d_roll = 47
+set f_roll = 129
+set p_yaw = 48
+set i_yaw = 56
+set f_yaw = 129
+set angle_limit = 45
+set d_min_roll = 42
+set d_min_pitch = 57
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 45
+set simplified_master_multiplier = 135
+set simplified_i_gain = 65
+set simplified_d_gain = 105
+set simplified_pi_gain = 80
+set simplified_dmax_gain = 35
+set simplified_feedforward_gain = 80
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 130
+set tpa_rate = 70
+set tpa_breakpoint = 1300
+
+profile 1
+
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 125
+set throttle_boost = 2
+set p_pitch = 65
+set i_pitch = 76
+set d_pitch = 64
+set f_pitch = 175
+set p_roll = 48
+set i_roll = 56
+set d_roll = 47
+set f_roll = 129
+set p_yaw = 48
+set i_yaw = 56
+set f_yaw = 129
+set angle_limit = 45
+set d_min_roll = 42
+set d_min_pitch = 57
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 45
+set simplified_master_multiplier = 135
+set simplified_i_gain = 65
+set simplified_d_gain = 105
+set simplified_pi_gain = 80
+set simplified_dmax_gain = 35
+set simplified_feedforward_gain = 80
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 130
+set tpa_rate = 70
+set tpa_breakpoint = 1300
+
+profile 2
+
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 125
+set throttle_boost = 2
+set p_pitch = 65
+set i_pitch = 76
+set d_pitch = 64
+set f_pitch = 175
+set p_roll = 48
+set i_roll = 56
+set d_roll = 47
+set f_roll = 129
+set p_yaw = 48
+set i_yaw = 56
+set f_yaw = 129
+set angle_limit = 45
+set d_min_roll = 42
+set d_min_pitch = 57
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 45
+set simplified_master_multiplier = 135
+set simplified_i_gain = 65
+set simplified_d_gain = 105
+set simplified_pi_gain = 80
+set simplified_dmax_gain = 35
+set simplified_feedforward_gain = 80
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 130
+set tpa_rate = 70
+set tpa_breakpoint = 1300
+
+profile 3
+
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 125
+set throttle_boost = 2
+set p_pitch = 65
+set i_pitch = 76
+set d_pitch = 64
+set f_pitch = 175
+set p_roll = 48
+set i_roll = 56
+set d_roll = 47
+set f_roll = 129
+set p_yaw = 48
+set i_yaw = 56
+set f_yaw = 129
+set angle_limit = 45
+set d_min_roll = 42
+set d_min_pitch = 57
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 45
+set simplified_master_multiplier = 135
+set simplified_i_gain = 65
+set simplified_d_gain = 105
+set simplified_pi_gain = 80
+set simplified_dmax_gain = 35
+set simplified_feedforward_gain = 80
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 130
+set tpa_rate = 70
+set tpa_breakpoint = 1300
+
+profile 0
+
+rateprofile 0
+
+# end the command batch
+batch end
+#$ OPTION END

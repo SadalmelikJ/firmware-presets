@@ -1,0 +1,187 @@
+#$ TITLE:Nazgul F6 V2 ELRS/CRSF
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS:iflight, Nazgul, F6
+#$ AUTHOR: iFlight
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: 
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:* NOT FOR BEGINNERS! Only for experienced users!
+#$ DESCRIPTION:
+#$ DESCRIPTION: How to:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "CRSF" selected
+#$ DESCRIPTION:* Come back & apply this Preset
+#$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
+#$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
+#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Display-)
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION:* Have Fun!
+#$ DESCRIPTION:* -
+#$ DESCRIPTION:
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ FORCE_OPTIONS_REVIEW: TRUE
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.5.0 Jun 25 2024 / 09:40:32 (c155f5830) MSP API: 1.46
+# config rev: 932b5c6
+
+# start the command batch
+batch start
+
+board_name IFLIGHT_BLITZ_F722
+manufacturer_id IFRC
+
+# name: F6 Evoque
+
+# feature
+feature GPS
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+feature ESC_SENSOR
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+serial 5 1024 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:5
+led 1 1,0::L:5
+led 2 2,0::L:5
+led 3 3,0::L:5
+led 4 4,0::L:5
+led 5 5,0::L:0
+led 6 6,0::L:0
+led 7 7,0::L:0
+
+# color
+color 5 91,0,255
+color 6 108,0,255
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set mag_hardware = NONE
+set angle_limit = 45
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set rc_smoothing_auto_factor = 140
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set blackbox_sample_rate = 1/16
+set dshot_idle_value = 600
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set vbat_max_cell_voltage = 422
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_rescue_ground_speed = 1100
+set gps_rescue_min_sats = 5
+set pid_process_denom = 2
+set osd_warn_bitmask = 57215
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 20000
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 2619
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2613
+set osd_tim_2_pos = 2599
+set osd_flymode_pos = 398
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 483
+set osd_mah_drawn_pos = 544
+set osd_craft_name_pos = 384
+set osd_gps_speed_pos = 3497
+set osd_gps_sats_pos = 3529
+set osd_home_dir_pos = 2554
+set osd_home_dist_pos = 3561
+set osd_altitude_pos = 18919
+set osd_power_pos = 388
+set osd_warnings_pos = 14869
+set osd_avg_cell_voltage_pos = 2567
+set osd_disarmed_pos = 2390
+set debug_mode = GYRO_SCALED
+set craft_name = F6 Evoque
+
+profile 0
+
+# profile 0
+set profile_name = DEFAULT
+set vbat_sag_compensation = 100
+set iterm_relax_cutoff = 10
+set pidsum_limit = 1000
+set p_pitch = 80
+set i_pitch = 136
+set d_pitch = 89
+set f_pitch = 160
+set p_roll = 70
+set i_roll = 118
+set d_roll = 81
+set f_roll = 140
+set p_yaw = 70
+set i_yaw = 118
+set f_yaw = 140
+set d_min_roll = 68
+set d_min_pitch = 73
+set thrust_linear = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 35
+set simplified_master_multiplier = 130
+set simplified_i_gain = 95
+set simplified_d_gain = 175
+set simplified_pi_gain = 120
+set simplified_dmax_gain = 60
+set simplified_feedforward_gain = 90
+set simplified_pitch_d_gain = 95
+set simplified_pitch_pi_gain = 110
+set tpa_rate = 50
+set tpa_breakpoint = 1280
+
+rateprofile 0
+
+# rateprofile 0
+set thr_mid = 40
+set thr_expo = 30
+set roll_rc_rate = 12
+set pitch_rc_rate = 12
+set yaw_rc_rate = 10
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+
+# end the command batch
+batch end
+# 
+#$ OPTION END
