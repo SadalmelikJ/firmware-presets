@@ -424,6 +424,7 @@
       "Long Range",
       "loRanger",
       "lr5",
+      "Mach",
       "mamba",
       "Marek",
       "mck",
@@ -471,6 +472,7 @@
       "Pure Race",
       "quaddiction",
       "quick",
+      "R5",
       "R9",
       "race",
       "race rates ctzsnooze actual",
@@ -523,6 +525,7 @@
       "Spec",
       "spec racing",
       "speedybee",
+      "Sport",
       "squirrel",
       "stats",
       "StingersSwarm",
@@ -7529,6 +7532,82 @@
         "iflight",
         "Taurus",
         "X8"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Mach R5 Sport Analog 6s ELRS 4.5.0.txt",
+      "hash": "e1956f8d387a282a14fcd1b50e69666462cbe7fb578d620deff8e8fb9bf3b46c",
+      "title": "Mach R5 Sport Analog CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Mach",
+        "R5",
+        "Sport"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Mach R5 Sport HDZero 6s ELRS 4.5.0.txt",
+      "hash": "99b9077c9b012d89f272a1e1e33a296444067a17d627b85a0ac3f5473beb2f2b",
+      "title": "Mach R5 Sport HDZero CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Mach",
+        "R5",
+        "Sport"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Mach R5 Sport Vista 6s DJI 4.5.0.txt",
+      "hash": "6113089cad3ff1b8346c6feb1fd25935a3eb59ff8f3a58c3a66458d574da0674",
+      "title": "Mach R5 Sport Vista DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Mach",
+        "R5",
+        "Sport"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Mach R5 Sport Vista 6s ELRS 4.5.0.txt",
+      "hash": "233a115f5757464e4159fc3702564b843f5890c970172d1bc168de72073d734c",
+      "title": "Mach R5 Sport Vista CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Mach",
+        "R5",
+        "Sport"
       ],
       "author": "iFlight",
       "force_options_review": true,
