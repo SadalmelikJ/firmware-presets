@@ -7410,8 +7410,8 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F4 O3 ELRS 4.5.x.txt",
-      "hash": "8ebee4896c31a09b9019c16769ad0f738c16df14c6aa7af83a0b0aa4fa329674",
-      "title": "Nazgul F4 ELRS/CRSF",
+      "hash": "0fa165e90747a1c15e9c0dcc28effcc9c118bdd5de281de9706d9aa89d00e662",
+      "title": "Nazgul F4 CRSF/ELRS",
       "firmware_version": [
         "4.5"
       ],
@@ -7446,8 +7446,8 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 O3 ELRS 4.5.0.txt",
-      "hash": "f2b443f7c0512675752b627d4f831636ae64d55e1f25a2ae0765d3e1eaa28ed6",
-      "title": "Nazgul F5 V2 ELRS/CRSF",
+      "hash": "8534e70b20aa978fba4265d5d710558828e0cc61b75851fbc369fa7671ffcc2e",
+      "title": "Nazgul F5 V2 CRSF/ELRS",
       "firmware_version": [
         "4.5"
       ],
@@ -7482,8 +7482,8 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 O3 ELRS 4.5.0.txt",
-      "hash": "8a8c460b2a5baa9b18815a4fc1824ba8a454ff105a3202fa19448f45ebda0d0c",
-      "title": "Nazgul F6 V2 ELRS/CRSF",
+      "hash": "177721eacb5de68700bc9a80c03ae4fd80ed692edc97a43c4bb3bbcafaa65026",
+      "title": "Nazgul F6 V2 CRSF/ELRS",
       "firmware_version": [
         "4.5"
       ],
