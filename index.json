@@ -7449,8 +7449,8 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 O3 DJI 4.5.0.txt",
-      "hash": "6c1bab56d28d83396ac0b5caf1051bf4ad6c5d5a3035c921e53da8efcddc8e9a",
-      "title": "Nazgul F5 V2 DJI RC",
+      "hash": "b59b56cbc979bc6751ee73d366c3c7ca1896f0b1b2987196bbd58d471babe8ce",
+      "title": "Nazgul F5 V2 O3 DJI RC",
       "firmware_version": [
         "4.5"
       ],
@@ -7484,6 +7484,42 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 Vista ELRS 4.5.0.txt",
+      "hash": "8fdc9e8ee0e50e945a671e9a8ac4e335c2526b220293b36f5fc6f378f1d5dc96",
+      "title": "Nazgul F5 V2 Vista CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F5"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 Analog ELRS 4.5.0.txt",
+      "hash": "af76db3307b67853cf8ec146c5dd3f69469b636bef4f5152d74069b0adbb6a57",
+      "title": "Nazgul F6 V2 Analog CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F6"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 O3 DJI 4.5.0.txt",
       "hash": "c509f7dc85d62ae1e849ab81cd8f1b8662936cdb4d25279af4c35aa904047388",
       "title": "Nazgul F6 V2 DJI RC",
@@ -7503,8 +7539,26 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 O3 ELRS 4.5.0.txt",
-      "hash": "177721eacb5de68700bc9a80c03ae4fd80ed692edc97a43c4bb3bbcafaa65026",
-      "title": "Nazgul F6 V2 CRSF/ELRS",
+      "hash": "8dc2b8c46a6b99678e949d30721a95722227a177588031a5e54080ae5f56c5f2",
+      "title": "Nazgul F6 V2 O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F6"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 Vista ELRS 4.5.0.txt",
+      "hash": "77de775cc8948ed6d26ca5f520ce57b00fabe7c2dad417b720f56f45b8fac1da",
+      "title": "Nazgul F6 V2 Vista CRSF/ELRS",
       "firmware_version": [
         "4.5"
       ],
