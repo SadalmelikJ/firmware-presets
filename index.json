@@ -7430,6 +7430,24 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 Analog ELRS.txt",
+      "hash": "cb27ce1e6e79292c30af493b52d5fc62771164ed2f064684cb85ae70fd4b8659",
+      "title": "Nazgul F5 V2 Analog CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F5"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 O3 DJI 4.5.0.txt",
       "hash": "6c1bab56d28d83396ac0b5caf1051bf4ad6c5d5a3035c921e53da8efcddc8e9a",
       "title": "Nazgul F5 V2 DJI RC",
@@ -7449,8 +7467,8 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 O3 ELRS 4.5.0.txt",
-      "hash": "8534e70b20aa978fba4265d5d710558828e0cc61b75851fbc369fa7671ffcc2e",
-      "title": "Nazgul F5 V2 CRSF/ELRS",
+      "hash": "0fe5f5510664221568c5bfc5c98838fde16db835840894075d97534758b82c74",
+      "title": "Nazgul F5 V2 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
       ],
