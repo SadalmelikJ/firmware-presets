@@ -7845,8 +7845,44 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Taurus X8 Pro O3 DJI 4.5.0.txt",
+      "hash": "b29d867f0969cad48c3e928e96ade569157d6450e8de4a6f3b93187e1a200372",
+      "title": "Taurus X8 PRO DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Taurus",
+        "X8"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Taurus X8 Pro O3 ELRS 4.5.0.txt",
+      "hash": "2b4216ab7d5f46f64151587774f5b4e67bb84ff8367830522164d4b1d964d2c6",
+      "title": "Taurus X8 PRO CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Taurus",
+        "X8"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/tune/SadalmelikJ/Taurus X8 V3 O3 DJI 4.5.0.txt",
-      "hash": "7559adb4f7e4eb746fbde3da1960e0c75e1e2314183fb4534668764ca36a3d94",
+      "hash": "191e04a51769f3874353f4ef03d0952d55c4bd179ee6bc70fc45a8e22417164a",
       "title": "Taurus X8 V3 DJI RC",
       "firmware_version": [
         "4.5"
@@ -7864,7 +7900,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/Taurus X8 V3 O3 ELRS 4.5.0.txt",
-      "hash": "0baf7777cfe3819d5146a5282172da69bca61694f0965fbfde0eb8340de3a3ae",
+      "hash": "bf95424d2679c0dab67f4f02fea63c1f952608c0bcbe991f90ac63d7f87c573a",
       "title": "Taurus X8 V3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
