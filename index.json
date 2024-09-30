@@ -310,6 +310,7 @@
       "camera_control",
       "Cgo",
       "Chief",
+      "Chimera",
       "chris",
       "cine25",
       "cine35",
@@ -7394,6 +7395,108 @@
       "priority": 1000000000000
     },
     {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Chimera7 Pro V2 Analog（1.6w vtx） ELRS.txt",
+      "hash": "435fcb37cb80ad9a80f06dfe7c7032c978828b50ad8ba863568f79db1ea0e99a",
+      "title": "Chimera 7 Pro V2 Analog 1.6w vtx CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Chimera"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Chimera7 Pro V2 Analog（2.5w vtx） ELRS.txt",
+      "hash": "89e7cc396636563dea62188ecc05c0f2c78c84e82f888d07c3fe975f6c6c7a28",
+      "title": "Chimera 7 Pro V2 Analog 1.6w vtx CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Chimera"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Chimera9 Pro Analog（1.6w vtx） ELRS.txt",
+      "hash": "62329df641e58722bc47ba35aa5c372beb58497618f3eab0d6f4d3ec704906a8",
+      "title": "Chimera 9 Pro Analog 1.6w vtx CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Chimera"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Chimera9 Pro Analog（2.5w vtx） ELRS.txt",
+      "hash": "dac1e6ae805eec0a5549a0380878b1e328a749e3b6f9f1304d3ba83ff22bb195",
+      "title": "Chimera 9 Pro Analog 2.5w vtx CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Chimera"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Chimera9 Pro O3 DJI.txt",
+      "hash": "9a4ea5644f668648d8785d641f23c7583291e34895ffe7262a697d004a68290a",
+      "title": "Chimera 9 Pro O3 DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Chimera"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Chimera9 Pro O3 ELRS.txt",
+      "hash": "bc395c9213b62a3113f9c8a9b0df25714aedeaec97725b5d4e8c0cee6459223b",
+      "title": "Chimera 9 Pro O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Chimera"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F4 O3 DJI 4.5.x.txt",
       "hash": "f9add622e60d7d42191ae86a9e3cf1ca7a9d229c11a3003365b05a1a9cb14217",
       "title": "Nazgul F4 DJI RC",
@@ -7431,7 +7534,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 Analog ELRS.txt",
-      "hash": "cb27ce1e6e79292c30af493b52d5fc62771164ed2f064684cb85ae70fd4b8659",
+      "hash": "1b6f9689a9a797b5c9a1b29c1bc031dd1045908e966aa958dbefa761bc28a9dc",
       "title": "Nazgul F5 V2 Analog CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -7484,6 +7587,24 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 Vista DJI 4.5.0.txt",
+      "hash": "5681c0bde0e3c0811271c40f8f3940f8342ab86bacb301d46ad1addf8db4887b",
+      "title": "Nazgul F5 V2 Vista DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F5"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F5 V2 Vista ELRS 4.5.0.txt",
       "hash": "8fdc9e8ee0e50e945a671e9a8ac4e335c2526b220293b36f5fc6f378f1d5dc96",
       "title": "Nazgul F5 V2 Vista CRSF/ELRS",
@@ -7503,7 +7624,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 Analog ELRS 4.5.0.txt",
-      "hash": "af76db3307b67853cf8ec146c5dd3f69469b636bef4f5152d74069b0adbb6a57",
+      "hash": "bb4977b45d5311d220eb4340388e729877822560269c73a7d5534b65697a91e7",
       "title": "Nazgul F6 V2 Analog CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -7541,6 +7662,24 @@
       "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 O3 ELRS 4.5.0.txt",
       "hash": "8dc2b8c46a6b99678e949d30721a95722227a177588031a5e54080ae5f56c5f2",
       "title": "Nazgul F6 V2 O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Nazgul",
+        "F6"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/F6 V2 Vista DJI 4.5.0.txt",
+      "hash": "3af60fe258ce3758276cfba41050032f764d3492792acbf247d0cf6f5e4834fe",
+      "title": "Nazgul F6 V2 Vista DJI RC",
       "firmware_version": [
         "4.5"
       ],
@@ -7611,7 +7750,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/Mach R5 Sport Analog 6s ELRS 4.5.0.txt",
-      "hash": "e1956f8d387a282a14fcd1b50e69666462cbe7fb578d620deff8e8fb9bf3b46c",
+      "hash": "00b7575a5ea356556204b6992fee824c00920d6d228b1d87f8fe67a91247b556",
       "title": "Mach R5 Sport Analog CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -7630,7 +7769,7 @@
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/Mach R5 Sport HDZero 6s ELRS 4.5.0.txt",
-      "hash": "99b9077c9b012d89f272a1e1e33a296444067a17d627b85a0ac3f5473beb2f2b",
+      "hash": "4f1221bafa832b9d2192bc20a4b057771551a5d1b4bf11e87d9ceb824791f288",
       "title": "Mach R5 Sport HDZero CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -7704,6 +7843,42 @@
       "author": "sadalmelikj",
       "force_options_review": true,
       "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Taurus X8 V3 O3 DJI 4.5.0.txt",
+      "hash": "7559adb4f7e4eb746fbde3da1960e0c75e1e2314183fb4534668764ca36a3d94",
+      "title": "Taurus X8 V3 DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Taurus",
+        "X8"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Taurus X8 V3 O3 ELRS 4.5.0.txt",
+      "hash": "0baf7777cfe3819d5146a5282172da69bca61694f0965fbfde0eb8340de3a3ae",
+      "title": "Taurus X8 V3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Taurus",
+        "X8"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
     },
     {
       "fullPath": "presets/4.5/tune/Street_League_LeadFingers.txt",

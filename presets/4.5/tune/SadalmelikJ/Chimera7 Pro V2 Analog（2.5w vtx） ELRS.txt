@@ -1,8 +1,8 @@
-#$ TITLE:Nazgul F5 V2 Analog CRSF/ELRS
+#$ TITLE:Chimera 7 Pro V2 Analog 1.6w vtx CRSF/ELRS
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS:iflight, Nazgul, F5
+#$ KEYWORDS:iflight, Chimera
 #$ AUTHOR: iFlight
 
 #$ PARSER: MARKED
@@ -37,7 +37,8 @@
 defaults nosave
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Wipe All
+
+#$ OPTION BEGIN (CHECKED): Apply All
 # version
 # Betaflight / STM32F7X2 (S7X2) 4.5.0 Jun 25 2024 / 09:40:32 (c155f5830) MSP API: 1.46
 # config rev: 932b5c6
@@ -48,7 +49,27 @@ batch start
 board_name IFLIGHT_BLITZ_F722
 manufacturer_id IFRC
 
-# name: Nazgul F5 V2
+# name: Chimera7 Pro V2
+
+# timer
+timer A00 AF2
+# pin A00: TIM5 CH1 (AF2)
+timer C06 AF3
+# pin C06: TIM8 CH1 (AF3)
+timer C07 AF3
+# pin C07: TIM8 CH2 (AF3)
+timer A01 AF1
+# pin A01: TIM2 CH2 (AF1)
+
+# dma
+dma pin A00 0
+# pin A00: DMA1 Stream 2 Channel 6
+dma pin C06 0
+# pin C06: DMA2 Stream 2 Channel 0
+dma pin C07 1
+# pin C07: DMA2 Stream 3 Channel 7
+dma pin A01 0
+# pin A01: DMA1 Stream 6 Channel 3
 
 # feature
 feature GPS
@@ -68,14 +89,10 @@ beacon RX_LOST
 beacon RX_SET
 
 # led
-led 0 0,0::L:6
-led 1 1,0::L:6
-led 2 2,0::L:6
-led 3 3,0::L:6
-led 4 4,0::L:6
-led 5 5,0::L:6
-led 6 6,0::L:6
-led 7 7,0::L:6
+led 0 0,0::L:0
+led 1 1,0::L:0
+led 2 2,0::L:0
+led 3 3,0::L:1
 
 # color
 color 5 91,0,255
@@ -93,59 +110,62 @@ vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
 vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
 vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
 vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable powerlevels 4
-vtxtable powervalues 25 400 800 1600
-vtxtable powerlabels 25 400 800 1K6
+vtxtable powerlevels 5
+vtxtable powervalues 25 400 800 1500 2500
+vtxtable powerlabels 25 400 800 1.5 2.5
 
 # master
-set angle_limit = 45
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 700
-set dyn_notch_count = 2
+set gyro_lpf1_static_hz = 200
+set gyro_lpf2_static_hz = 1000
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 120
-set gyro_lpf1_dyn_min_hz = 350
-set gyro_lpf1_dyn_max_hz = 700
-set rc_smoothing_auto_factor = 20
-set rc_smoothing_setpoint_cutoff = 25
-set rc_smoothing_feedforward_cutoff = 25
+set dyn_notch_min_hz = 80
+set dyn_notch_max_hz = 500
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_auto_factor_throttle = 170
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
 set blackbox_sample_rate = 1/16
-set dshot_idle_value = 650
+set dshot_idle_value = 800
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT300
-set vbat_max_cell_voltage = 422
 set yaw_motors_reversed = ON
 set small_angle = 180
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 set gps_rescue_ground_speed = 1100
 set gps_rescue_min_sats = 5
+set yaw_deadband = 5
 set pid_process_denom = 2
-set simplified_gyro_filter_multiplier = 140
+set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 105
 set osd_warn_bitmask = 57215
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
 set osd_cap_alarm = 20000
-set osd_rssi_pos = 152
+set osd_rssi_pos = 88
 set osd_link_quality_pos = 2512
+set osd_link_tx_power_pos = 24
 set osd_rssi_dbm_pos = 2506
 set osd_tim_2_pos = 2497
-set osd_flymode_pos = 462
+set osd_flymode_pos = 398
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
-set osd_current_pos = 289
-set osd_mah_drawn_pos = 321
-set osd_craft_name_pos = 480
-set osd_gps_speed_pos = 2520
-set osd_gps_sats_pos = 2488
-set osd_home_dir_pos = 2447
+set osd_current_pos = 288
+set osd_mah_drawn_pos = 322
+set osd_craft_name_pos = 384
+set osd_gps_speed_pos = 2521
+set osd_gps_sats_pos = 2489
+set osd_home_dir_pos = 2446
 set osd_home_dist_pos = 2456
 set osd_flight_dist_pos = 153
 set osd_altitude_pos = 18817
 set osd_power_pos = 388
 set osd_warnings_pos = 14762
 set osd_avg_cell_voltage_pos = 2465
-set osd_disarmed_pos = 2315
+set osd_disarmed_pos = 2283
 set osd_stat_bitmask = 8798076
 set osd_displayport_device = AUTO
 set osd_canvas_width = 30
@@ -156,53 +176,65 @@ set vtx_channel = 3
 set vtx_power = 1
 set vtx_freq = 5732
 set vcd_video_system = PAL
-set rpm_filter_fade_range_hz = 80
-set craft_name = Nazgul F5 V2
+set rpm_filter_min_hz = 90
+set craft_name = Chimera7 Pro V2
 
 profile 0
 
 # profile 0
 set profile_name = DEFAULT
-set dterm_lpf1_dyn_expo = 7
-set dterm_lpf1_static_hz = 0
-set vbat_sag_compensation = 100
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 127
+set dterm_lpf1_static_hz = 63
+set dterm_lpf2_static_hz = 127
+set iterm_relax_cutoff = 10
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
-set p_pitch = 62
-set i_pitch = 89
-set d_pitch = 62
-set f_pitch = 122
-set p_roll = 59
-set i_roll = 85
-set d_roll = 54
-set f_roll = 117
-set p_yaw = 59
-set i_yaw = 85
-set f_yaw = 117
-set d_min_roll = 48
-set d_min_pitch = 54
+set yaw_lowpass_hz = 50
+set p_pitch = 99
+set i_pitch = 88
+set d_pitch = 110
+set f_pitch = 142
+set p_roll = 86
+set i_roll = 76
+set d_roll = 88
+set f_roll = 124
+set p_yaw = 100
+set i_yaw = 120
+set f_yaw = 76
+set angle_limit = 45
+set d_min_roll = 81
+set d_min_pitch = 101
+set thrust_linear = 10
 set feedforward_averaging = 2_POINT
-set feedforward_smooth_factor = 45
-set feedforward_jitter_factor = 10
-set dyn_idle_min_rpm = 40
-set simplified_master_multiplier = 140
-set simplified_i_gain = 80
-set simplified_d_gain = 115
-set simplified_pi_gain = 95
-set simplified_dmax_gain = 40
-set simplified_feedforward_gain = 70
-set tpa_rate = 60
-set tpa_breakpoint = 1300
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 160
+set simplified_i_gain = 50
+set simplified_d_gain = 170
+set simplified_pi_gain = 120
+set simplified_dmax_gain = 25
+set simplified_feedforward_gain = 65
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 85
+set tpa_rate = 50
+set tpa_breakpoint = 1200
 
 rateprofile 0
 
 # rateprofile 0
-set roll_rc_rate = 10
-set pitch_rc_rate = 10
-set yaw_rc_rate = 10
-set roll_expo = 30
-set pitch_expo = 30
-set yaw_expo = 30
+set rateprofile_name = DEFAULT
+set roll_rc_rate = 18
+set pitch_rc_rate = 18
+set yaw_rc_rate = 18
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 70
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
 
 # end the command batch
 batch end
