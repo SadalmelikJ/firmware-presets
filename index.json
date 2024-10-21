@@ -275,6 +275,7 @@
       "9\"",
       "9in",
       "9ms",
+      "A85",
       "ACCESS",
       "acro",
       "Acrobaix",
@@ -283,6 +284,7 @@
       "air unit",
       "akk",
       "AlexFPV",
+      "Alpha",
       "analog",
       "antonig",
       "AOS",
@@ -7393,6 +7395,24 @@
       ],
       "author": "Volker Göschl-Covrljan",
       "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/SadalmelikJ/Alpha A85 Analog ELRS 4.5.x 600mw.txt",
+      "hash": "1b6eea618b92f3c5e0c279dcb6ab8978da2f35b725bddd8c04bd002f0b70de57",
+      "title": "Alpha A85 Analog 600mw vtx CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "Alpha",
+        "A85"
+      ],
+      "author": "iFlight",
+      "force_options_review": true,
+      "priority": 0
     },
     {
       "fullPath": "presets/4.5/tune/SadalmelikJ/Chimera7 Pro V2 Analog（1.6w vtx） ELRS.txt",
